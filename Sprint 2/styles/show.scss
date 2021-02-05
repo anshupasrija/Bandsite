@@ -1,0 +1,114 @@
+@import "./partials/variables";
+@import "./partials/fontfaces";
+@import "./partials/mixins";
+
+.site-banner--show{
+    background:url('../Assets/Images/prayogo-pujo-haryono-lggno_0Aiz4-unsplash.jpg');
+   background-size:cover;
+   height:472px;
+   color:$navtext-color;
+   margin-top:0%;
+   @include tablet{
+       height:672px;
+   }
+   @include desktop{
+       height:670px;
+
+   }
+    
+}
+.label1{
+        &-list{
+        list-style: none;
+        padding:16px;
+        margin:0;
+        @include tablet{
+            padding-left:24px;
+        }
+    }
+    
+}
+.list1-item{
+    @include tablet{
+        display:flex;                 
+        justify-content:space-around;
+        border-bottom:3px solid #E1E1E1;
+        margin-bottom:25px;
+    }
+
+}
+.showDateLabel,.showVenueLabel,.showLocationLabel{
+    color:#AFAFAF;
+    text-transform: uppercase;
+    @include tablet{
+        display:none;
+    }
+}
+.button1{
+    background-color: $nav-color;
+    color:$navtext-color;
+    width:270px;
+    padding:5px;;
+    font-size:1.2rem;
+    border-radius:5px;
+    @include tablet{
+        width:180px;
+        height:40px;
+        padding:5px;
+    }
+}
+.show-heading{
+    padding:32px 0 40px 16px;
+    margin:0;
+    @include tablet{
+        padding-left:24px;
+    }
+    
+}
+.site-banner__heading--show{
+    margin-top:0;
+    padding-top:10px;
+    @include tablet{
+        font-size:30px;
+        padding:15% 0 0 24px;
+        margin-top:0;
+        color:#fff;
+    }
+    @include desktop{
+        padding-top:40px;
+        padding-left: 150px;
+    }
+   }
+.hiddenlabels{
+    display:none;
+    @include tablet{
+        display:unset;
+        margin-left: 5%;
+        
+    }
+    @include desktop{       
+        margin-left:10%;
+            }
+    &-text{
+        @include tablet{
+            display:inline-block;
+            margin-right: 100px;
+            margin-left:24px;
+            color:#AFAFAF;
+        }
+        @include desktop{
+            padding-right:11%;
+        }
+    }
+
+}
+.iframe{
+    margin-left:45%;
+    margin-top:45%;
+    @include tablet{
+    margin-top:25px;
+    }
+    @include desktop{
+    margin-left:50%;
+    }
+}
