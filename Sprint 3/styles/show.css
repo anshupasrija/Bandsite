@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../Assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../../Assets/fonts/AvenirNextLTPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirNext LT Pro';
+  src: url("../../Assets/fonts/AvenirNextLTPro-BoldIt.woff2") format("woff2"), url("../../Assets/fonts/AvenirNextLTPro-BoldIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+.site-banner--show {
+  background: url("../Assets/Images/prayogo-pujo-haryono-lggno_0Aiz4-unsplash.jpg");
+  background-size: cover;
+  height: 472px;
+  color: #fff;
+  margin-top: 0%;
+}
+
+@media screen and (min-width: 768px) {
+  .site-banner--show {
+    height: 672px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .site-banner--show {
+    height: 670px;
+  }
+}
+
+.label1-list {
+  list-style: none;
+  padding: 16px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .label1-list {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list1-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border-bottom: 3px solid #E1E1E1;
+    margin-bottom: 25px;
+  }
+}
+
+.showDateLabel, .showVenueLabel, .showLocationLabel {
+  color: #AFAFAF;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .showDateLabel, .showVenueLabel, .showLocationLabel {
+    display: none;
+  }
+}
+
+.button1 {
+  background-color: #323232;
+  color: #fff;
+  width: 270px;
+  padding: 5px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .button1 {
+    width: 180px;
+    height: 40px;
+    padding: 5px;
+  }
+}
+
+.show-heading {
+  padding: 32px 0 40px 16px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .show-heading {
+    padding-left: 24px;
+  }
+}
+
+.site-banner__heading--show {
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-banner__heading--show {
+    font-size: 30px;
+    padding: 15% 0 0 24px;
+    margin-top: 0;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .site-banner__heading--show {
+    padding-top: 40px;
+    padding-left: 150px;
+  }
+}
+
+.hiddenlabels {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hiddenlabels {
+    display: unset;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hiddenlabels {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hiddenlabels-text {
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 24px;
+    color: #AFAFAF;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hiddenlabels-text {
+    padding-right: 11%;
+  }
+}
+
+.iframe {
+  margin-left: 45%;
+  margin-top: 45%;
+}
+
+@media screen and (min-width: 768px) {
+  .iframe {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .iframe {
+    margin-left: 50%;
+  }
+}
+/*# sourceMappingURL=show.css.map */

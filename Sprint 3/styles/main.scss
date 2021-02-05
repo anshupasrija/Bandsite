@@ -1,0 +1,477 @@
+@import "./partials/variables";
+@import "./partials/fontfaces";
+@import "./partials/mixins";
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:'AvenirNext LT Pro'; 
+    }
+
+.site-header{
+    background: $nav-color;
+    width:100%;
+    height:80px;
+}
+.site__logo{
+     width:8rem;
+     margin:auto;     
+
+     @include tablet{
+         margin-left:1.25rem;
+         margin-right:0px;
+         padding:15px;  
+     }
+     @include desktop{
+         margin-left:1.25rem;
+     }
+ }
+ .logo-link{
+     display:inline-flex;
+     padding-top:1rem;     
+ }
+   
+.article__container, .gallery,
+.footer,.article__paragraph, .gallery__heading
+{
+    max-width:1200px;
+    margin: auto;
+    padding:0 1rem;
+}
+.site-nav{
+    text-align:center;
+    max-width: 1200px;
+    margin:0 auto;
+    display:flex;
+    width: 100%;
+    flex-direction:column;
+    &__list{
+        list-style: none;
+        display:flex;  
+        justify-content: space-evenly;  
+        // align-items: flex-end;   
+        padding:7px;        
+    }         
+    &__links{
+
+        text-decoration: none;
+        color:$navtext-color;    
+        display:inline-flex;             
+        width:100%;        
+        &:hover,
+        &--active {            
+          border-bottom: 4px solid $navtext-color;          
+        }           
+        @include tablet{
+            padding:17px;
+            &:hover, &--active{              
+                border-bottom: 4px solid $navtext-color;               
+            }
+        }
+       @include desktop{
+           padding-left:3.5rem;
+           &:hover, &--active{             
+            border-bottom: 4px solid $navtext-color;                    
+        }
+       }
+    }
+    }     
+    .site-nav {
+    @include tablet {        
+     flex-direction:row;  
+      height:80px;
+    }
+    @include desktop{
+        height:80px;
+    }  
+  } 
+.site-banner {
+    background: url("../Assets/Images/concert-1.jpg");    
+    background-size: cover;
+    height:183px;
+    @include tablet {
+        height:400px;
+        width:100%;
+    }
+    @include desktop{
+        height:670px;
+    }       
+  }  
+  .site-banner__heading {    
+    margin: 0;    
+    display:inline-block;
+    padding-top:15%;
+    color:$navtext-color;
+    @include tablet{
+        padding-left:24px;
+        font-size:$heroheader;
+        height:$heroheaderheight;  
+        }
+    @include desktop{
+        padding-left:180px;
+    }   
+  }
+.article__image{
+    width:100%;
+    @include tablet{
+        width:720px;
+        height:362px;
+    }
+    @include desktop{
+        width:896px;
+        height:450px;
+        text-align:center;
+    }      
+}
+.image__wrapper{
+    @include tablet{
+        width:100%;
+        text-align:center;
+    }
+    @include desktop{
+        width:100%;
+        text-align:center;
+    }
+}
+.article__quote{
+    font-weight:800;
+    &--bottom{
+        padding-top:24px;
+        font-weight:800;
+        @include desktop{
+            margin-left:8rem;
+        }
+    }
+    @include tablet{
+        display:inline-block;
+        font-size:$h2fontsize;
+        font-weight:900;
+        line-height:$h2height;
+    }
+    @include desktop{
+        display:inline-block;
+        margin-left: 8rem;
+        font-size:$h2fontsize;
+        line-height:$h2height;
+    }
+
+}
+.article__heading{
+    @include tablet{
+        font-size:$h1headersize ;
+            height:$h1headerheight;
+            padding-left:10px;
+        }
+        @include desktop{
+            font-size:$h1headersize ;
+            height:$h1headerheight;
+            padding-left:10px;
+        }
+}  
+.image-container{
+        margin:0;
+        padding:0;
+         @include tablet {
+        
+             max-width:1200px;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-evenly;      
+                     
+    }
+    @include desktop{        
+        max-width:100%;      
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
+    }
+    &__list{
+        width: 288px;
+        padding-bottom:16px;
+        height: auto;        
+        @include tablet{
+                        
+                         width:224px;
+                         height:126px;
+                         margin-bottom:24px;                    
+                    }
+        @include desktop{
+            width:344px;            
+            margin-bottom:24px;
+        }
+    }
+}
+.article{
+   &__wrapper{
+    @include tablet{
+        display:flex;
+        flex-wrap:wrap;  
+        }  
+    @include desktop{
+        display:flex;
+        flex-wrap:wrap;
+        width:100%;
+        justify-content: center;
+        padding-bottom: 3rem;        
+    }   
+
+    }
+    
+    &__description
+    {
+        @include tablet{
+        width:50%;
+        padding: 24px; 
+        margin:0;
+        line-height:$lineheight;
+        font-size:$parafontsize;
+     }
+        @include desktop{        
+            width:50%;
+            line-height:$lineheight;
+            font-size:$parafontsize;
+            padding:0 24px;
+            margin-top:32px;
+            font-weight:400;
+       }           
+    }  
+}
+.article__paragraph-heading{
+    font-size:1rem;
+   padding:40px 0 24px 0;
+    width:100%;
+    @include tablet{
+        font-size:2rem;
+        padding-left:15px;
+        margin-bottom:0;
+    }
+    @include desktop{
+        display:inline-block;
+        width:100%;
+        margin-bottom:0;       
+    }
+}
+.gallery-wrapper{
+    @include desktop{
+        background-color:$gallery-color;
+    }
+}
+.container{
+    @include desktop{
+       
+      display:flex;
+      width:100%;
+      justify-content:center;
+      padding:0 200px 0 200px;
+
+    }
+   }
+.gallery{
+    background-color:$gallery-color;
+        
+    @include desktop{
+        background-color:$gallery-color;
+        // height:100%;
+        // //  width:100%;
+        // padding:0 180px;      
+    
+    }
+    &__heading{
+        padding:32px 0 24px 0;
+        // padding-bottom:24px;
+        @include tablet{
+            font-size:$h1headersize;
+            height:$h1headerheight;
+            margin:0 0 30px 16px;            
+            padding:35px 0;
+        }
+    }
+}     
+    .footer{
+        background-color:$nav-color;
+        color:$navtext-color;
+        @include desktop{
+            padding-left:180px;
+        }
+        
+        &__heading{
+            display:inline-flex;
+            padding-top:12px;
+            @include tablet{
+                        padding-left:14px;
+            }
+           
+        }
+        &__icons{
+            @include tablet{
+            display:inline-flex;
+            padding:2rem;
+                           
+            }
+        }
+        &__img{
+            display:inline-flex;
+            padding:10px;
+        }
+        &__link{
+            color:inherit;
+            text-decoration: none;
+        }
+       
+    }
+ 
+.footer__wrapper{
+    @include tablet{
+    display:flex;  
+   
+}
+}
+.footer{
+   &__info{
+    
+    width:300px;
+    height:150px;
+    margin-bottom:2rem;
+
+    }
+    &__text{
+        padding-bottom:2rem;
+    }
+    &-wrapper{
+        @include desktop{
+            background-color:$nav-color;
+        }
+    }
+}
+.footer__copy--bold{
+    font-weight:bold;
+}
+.form{
+    &-container{
+        display:flex;
+        // width:100%;
+        // margin: auto;
+        flex-wrap: wrap;
+        padding:0 1rem;
+    }
+    &-wrapper{
+        margin:0;padding:0;
+        border-bottom:2px solid black;
+    }
+}
+.comment{
+    &-name{
+    display:block;
+    @include tablet{
+    //    margin-left:140px;
+    }
+}
+    &-input{
+        width:224px;
+        margin-bottom:20px;
+        border:2px solid black;
+        border-radius:5px;
+        @include tablet{
+            width:470px;
+            height:60px;  
+        }
+        @include desktop{
+            
+            height:48px;
+        }
+}
+&-description{    
+        width:14rem;
+        background-color:#FAFAFA;
+        border-radius:5px;
+        @include tablet{
+            width:470px;
+            margin-bottom:20px;
+            position:relative;
+        }
+        @include desktop{
+            height:96px;
+        }
+   }
+}  
+.nameList{
+    list-style:none;
+    padding-left:20%;
+    border-bottom:3px solid #FAFAFA;
+    padding-right:16px;
+   
+    
+    @include tablet{
+        padding-right: 20%;
+        width:100%;
+    }    
+}
+.list-wrapper{
+     margin-left:20%;
+    padding:0;  
+    @include tablet{
+        display:flex;       
+        flex-direction:column;               
+    }
+    @include desktop{
+     padding-left:300px;
+        
+    }
+}
+// .textarea{
+//     @include tablet{
+//         display:block;
+//     }
+// }
+// .form-comments{
+//     position:relative;
+// }
+.circle{
+ background-image: url("../Assets/Images/Mohan-muruge.jpg");  
+ width:40px;
+ height:40px;
+ border-radius:50%;
+ background-size: cover;
+ display:inline-block;
+position:absolute;
+@include tablet{
+margin-left:10%;
+}
+@include desktop{
+    margin-left:35%;
+}
+}
+.button{
+    background-color: $nav-color;
+    color:$navtext-color;
+    width:224px;
+    padding:5px;;
+    font-size:1.2rem;
+    border-radius:5px;
+    @include tablet{
+        display:block;
+        margin-left:250px;
+        padding:6px;
+    }
+    @include desktop{
+        width:160px;
+        height:48px;
+        margin-left:310px;
+    }
+}
+.label{
+    color:#AFAFAF;
+    // @include desktop{
+    //     display:none;
+    // }
+}.form
+ &-heading{
+    @include tablet{
+        padding-left:100px;
+    }
+    @include desktop{    
+    padding-left:160px;
+    }    
+}
