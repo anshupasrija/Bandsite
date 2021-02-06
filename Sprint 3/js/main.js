@@ -30,13 +30,15 @@ function appendArray(arrayName) {
     commentDescriptionList.innerText = commentObj.comment;
     const dateListItem = document.createElement('p');
     dateListItem.classList.add("dateListItem");
-    dateListItem.innerText = new Date(commentObj.timestamp).toLocaleDateString();
+    dateListItem.innerText = new Date(commentObj.timestamp).toLocaleDateString();  
     nameList.appendChild(nameListElem);
     nameList.appendChild(commentDescriptionList);
     nameList.appendChild(dateListItem);
     formUl.appendChild(nameList);    
   }
 }
+const apiUrl = "https://project-1-api.herokuapp.com";
+const apiKey = "1cd68345-f7a4-47d8-bede-96bdbe28fad4";
 function appendForm(name, commentDetail,timestamp)
 { 
   axios
@@ -53,14 +55,15 @@ function appendForm(name, commentDetail,timestamp)
   .catch (function(error){
     console.log(error);
   });   
-  const apiUrl = "https://project-1-api.herokuapp.com";
-  const apiKey = "1cd68345-f7a4-47d8-bede-96bdbe28fad4";
+}
+
+  
   function getcomments(){
     axios
     .get(`${apiUrl}/comments?api_key=${apiKey}`)
     .then (function(response) {
       appendArray(response.data);
-      console.log()
+      console.log(response.data);
     })
     .catch (function(error){
       console.log(error);
@@ -93,4 +96,4 @@ function appendForm(name, commentDetail,timestamp)
             //   commentDescription: commentDetail,
             //   date:(d.getMonth()+1)+'/'+ d.getDate()+'/'+d.getFullYear()});
             //   appendArray(displayArray);
-          }
+          

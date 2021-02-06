@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'AvenirNext LT Pro';
-  src: url("../../Assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../../Assets/fonts/AvenirNextLTPro-Regular.woff") format("woff");
+  src: url("../Assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../Assets/fonts/AvenirNextLTPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'AvenirNext LT Pro';
-  src: url("../../Assets/fonts/AvenirNextLTPro-BoldIt.woff2") format("woff2"), url("../../Assets/fonts/AvenirNextLTPro-BoldIt.woff") format("woff");
+  src: url("../Assets/fonts/AvenirNextLTPro-BoldIt.woff2") format("woff2"), url("../Assets/fonts/AvenirNextLTPro-BoldIt.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -228,7 +228,7 @@ body {
   .article__quote {
     display: inline-block;
     font-size: 24px;
-    font-weight: 950;
+    font-weight: 900;
     line-height: 32px;
   }
 }
@@ -557,7 +557,8 @@ body {
 .nameList {
   list-style: none;
   padding-left: 20%;
-  border-bottom: 3px solid grey;
+  border-bottom: 3px solid #FAFAFA;
+  padding-right: 16px;
 }
 
 @media screen and (min-width: 768px) {
