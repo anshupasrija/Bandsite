@@ -55,9 +55,7 @@ function appendForm(name, commentDetail,timestamp)
   .catch (function(error){
     console.log(error);
   });   
-}
-
-  
+}  
   function getcomments(){
     axios
     .get(`${apiUrl}/comments?api_key=${apiKey}`)
@@ -71,29 +69,5 @@ function appendForm(name, commentDetail,timestamp)
   }
   getcomments();
   
-  // const productArr = [
-    //   {
-      //     name: 'Micheal Lyons',
-      //     date: '12/18/2018',
-      //     commentDescription: 'They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of concert I have EVER witnessed',
-      
-      //   },
-      //   {
-        //     name: 'Gary Wong',
-        //     date: '12/12/2018',
-        //     commentDescription: "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!",
-        //   },
-        //   {
-          //     name: 'Theodore Duncan',
-          //     date: '11/15/2018',
-          //     commentDescription: "Every time I see him shred I feel so motivated to get off my couch and hop on my board. He’s so talented! I wish I can ride like him one day so I can really enjoy myself!",
-          //   }
-          // ];
-          
-          //  let d = new Date();
-          //  displayArray.push({
-            //   name: name,
-            //   commentDescription: commentDetail,
-            //   date:(d.getMonth()+1)+'/'+ d.getDate()+'/'+d.getFullYear()});
-            //   appendArray(displayArray);
+  
           

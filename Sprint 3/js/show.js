@@ -9,29 +9,23 @@ function dateList(showList)
     const showListItem = document.createElement("li");
     showListItem.classList.add("list1-item");    
     const showListHeading= document.createElement("h4");
-    showListHeading.classList.add("showDateLabel"); 
+    showListHeading.classList.add("show__datelabel"); 
     showListHeading.innerText="date";
     const showParagraph= document.createElement("h4");
-    showParagraph.classList.add("showList__paragraph");
-    showParagraph.innerText=showObject.date;
-    // console.log(showListHeading, showParagraph); 
-    // const showVenue=document.createElement('li');
-    // showVenue.classList.add("showVenue");
+    showParagraph.classList.add("show__listparagraph");
+    showParagraph.innerText=showObject.date;    
     const showVenueLabel=document.createElement('h4');
-    showVenueLabel.classList.add("showVenueLabel");
+    showVenueLabel.classList.add("show__venuelabel");
     showVenueLabel.innerText="place";
     const showVenueParagraph=document.createElement('p');
-    showVenueParagraph.classList.add("showVenueParagraph");
-    showVenueParagraph.innerText=showObject.place;
-    // console.log( showVenueLabel,showVenueParagraph);
+    showVenueParagraph.classList.add("show__venueparagraph");
+    showVenueParagraph.innerText=showObject.place; 
     const showLocationLabel=document.createElement('h4');
-    showLocationLabel.classList.add("showLocationLabel");
-    showLocationLabel.innerText="location";        
-    // console.log(showLocationLabel);
+    showLocationLabel.classList.add("show__locationlabel");
+    showLocationLabel.innerText="location";          
     const showLocationParagraph=document.createElement('p');
-    showLocationParagraph.classList.add("showLocationParagraph");
-    showLocationParagraph.innerText=showObject.location;
-    // console.log(showLocationParagraph);  
+    showLocationParagraph.classList.add("show__locationparagraph");
+    showLocationParagraph.innerText=showObject.location;    
     const button=document.createElement("button");
     button.classList.add('button1');
     button.innerText="BUY TICKETS";               
@@ -45,7 +39,7 @@ function dateList(showList)
     showDetails.appendChild(showListItem);  
   }
 }    
-// dateList();
+
 const apiUrl = "https://project-1-api.herokuapp.com";
 const apiKey = "1cd68345-f7a4-47d8-bede-96bdbe28fad4";
 function getdates(){
@@ -60,38 +54,3 @@ function getdates(){
   });    
 }
 getdates();
-
-// const showList = [
-//     {
-//       date: "Mon Dec 17 2018",
-//       venue: "Ronald Lane",
-//       location:"San Fancisco, CA",
-//     },
-//     {
-//         date: "Tue Jul 18 2019",
-//       venue: "Pier 3 East",
-//       location:"San Fancisco, CA",
-//     },
-//     {
-//         date: "Fri Jul 22 2019",
-//         venue: "View Loungue",
-//         location:"San Fancisco, CA",
-//     },
-//     {
-//       date: "Sat Aug 12 2019",
-//       venue: "Hyatt Agency",
-//       location:"San Fancisco, CA",
-//   },
-//   {
-//     date: "Fri Sep 05 2019",
-//     venue: "Moscow Center",
-//     location:"San Fancisco, CA",
-// },
-// {
-//   date: "Wed Aug 11 2019",
-//   venue: "Pres Club",
-//   location:"San Fancisco, CA",
-// }
-
-
-//   ];

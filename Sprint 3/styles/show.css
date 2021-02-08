@@ -6,14 +6,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'AvenirNext LT Pro';
-  src: url("../Assets/fonts/AvenirNextLTPro-BoldIt.woff2") format("woff2"), url("../Assets/fonts/AvenirNextLTPro-BoldIt.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
 .site-banner--show {
   background: url("../Assets/Images/prayogo-pujo-haryono-lggno_0Aiz4-unsplash.jpg");
   background-size: cover;
@@ -58,13 +50,13 @@
   }
 }
 
-.showDateLabel, .showVenueLabel, .showLocationLabel {
+.show__datelabel, .show__venuelabel, .show__locationlabel {
   color: #AFAFAF;
   text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
-  .showDateLabel, .showVenueLabel, .showLocationLabel {
+  .show__datelabel, .show__venuelabel, .show__locationlabel {
     display: none;
   }
 }

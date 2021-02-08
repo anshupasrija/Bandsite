@@ -50,8 +50,7 @@ body{
     &__list{
         list-style: none;
         display:flex;  
-        justify-content: space-evenly;  
-        // align-items: flex-end;   
+        justify-content: space-evenly;          
         padding:7px;        
     }         
     &__links{
@@ -217,8 +216,7 @@ body{
         padding-bottom: 3rem;        
     }   
 
-    }
-    
+    }    
     &__description
     {
         @include tablet{
@@ -272,15 +270,11 @@ body{
     background-color:$gallery-color;
         
     @include desktop{
-        background-color:$gallery-color;
-        // height:100%;
-        // //  width:100%;
-        // padding:0 180px;      
+        background-color:$gallery-color;        
     
     }
     &__heading{
-        padding:32px 0 24px 0;
-        // padding-bottom:24px;
+        padding:32px 0 24px 0;        
         @include tablet{
             font-size:$h1headersize;
             height:$h1headerheight;
@@ -324,9 +318,8 @@ body{
  
 .footer__wrapper{
     @include tablet{
-    display:flex;  
-   
-}
+    display:flex;     
+    }
 }
 .footer{
    &__info{
@@ -350,9 +343,7 @@ body{
 }
 .form{
     &-container{
-        display:flex;
-        // width:100%;
-        // margin: auto;
+        display:flex;       
         flex-wrap: wrap;
         padding:0 1rem;
     }
@@ -364,9 +355,7 @@ body{
 .comment{
     &-name{
     display:block;
-    @include tablet{
-    //    margin-left:140px;
-    }
+   
 }
     &-input{
         width:224px;
@@ -420,14 +409,7 @@ body{
         
     }
 }
-// .textarea{
-//     @include tablet{
-//         display:block;
-//     }
-// }
-// .form-comments{
-//     position:relative;
-// }
+
 .circle{
  background-image: url("../Assets/Images/Mohan-muruge.jpg");  
  width:40px;
@@ -463,12 +445,9 @@ margin-left:10%;
 }
 .label{
     color:#AFAFAF;
-    // @include desktop{
-    //     display:none;
-    // }
-}
+   }
+   
 .form{
-
  &-heading{
     @include tablet{
         padding-left:100px;
@@ -476,5 +455,5 @@ margin-left:10%;
     @include desktop{    
     padding-left:160px;
     }    
-}
+    }
 }

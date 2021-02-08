@@ -6,14 +6,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'AvenirNext LT Pro';
-  src: url("../Assets/fonts/AvenirNextLTPro-BoldIt.woff2") format("woff2"), url("../Assets/fonts/AvenirNextLTPro-BoldIt.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
